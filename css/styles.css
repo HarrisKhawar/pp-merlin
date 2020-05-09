@@ -1,0 +1,32 @@
+
+/* home-button */
+.home-button {
+  max-width: 70px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.home-icon {
+  position: absolute;
+  border-radius: 100%;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  background-color: rgba(26, 188, 156, 0.9);
+}
+
+.home-icon:hover {
+  opacity: 1;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}

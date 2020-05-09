@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Simon</title>
+  <link rel="icon" href="images/harris-favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <!-- Home button -->
+  <!-- <div class="home-button fixed-top">
+    <a href="https://harriskhawar.com">
+      <img class="home-icon img-fluid" src="images/home-favicon.png" alt="home-favicon">
+      <img class="img-fluid" src="images/harris-favicon.png" alt="harris-favicon">
+    </a>
+  </div> -->
+
+  <section id="merlin">
+
+    <table class="button-pad">
+      <!-- <tr>
+        <td></td>
+        <td>1209Hz</td>
+        <td>1336Hz</td>
+        <td>1477Hz</td>
+        <td>1633Hz</td>
+      </tr> -->
+      <tr>
+        <td><button onmousedown="addOscillators(697.0, 1209.0)" onmouseup="stop()" data-freq='697.0, 1209.0'>1</button></td>
+        <td><button onmousedown="addOscillators(697.0, 1336.0)" onmouseup="stop()" data-freq='697.0, 1336.0'>2</button></td>
+        <td><button onmousedown="addOscillators(697.0, 1477.0)" onmouseup="stop()" data-freq='697.0, 1477.0'>3</button></td>
+        <td><button onmousedown="addOscillators(697.0, 1633.0)" onmouseup="stop()" data-freq='697.0, 1633.0'>A</button></td>
+      </tr>
+
+      <tr>
+        <td><button onmousedown="addOscillators(770.0, 1209.0)" onmouseup="stop()" data-freq='770.0, 1209.0'>4</button></td>
+        <td><button onmousedown="addOscillators(770.0, 1336.0)" onmouseup="stop()" data-freq='770.0, 1336.0'>5</button></td>
+        <td><button onmousedown="addOscillators(770.0, 1477.0)" onmouseup="stop()" data-freq='770.0, 1477.0'>6</button></td>
+        <td><button onmousedown="addOscillators(770.0, 1633.0)" onmouseup="stop()" data-freq='770.0, 1633.0'>B</button></td>
+      </tr>
+
+      <tr>
+        <td><button onmousedown="addOscillators(852.0, 1209.0)" onmouseup="stop()" data-freq='852.0, 1209.0'>7</button></td>
+        <td><button onmousedown="addOscillators(852.0, 1336.0)" onmouseup="stop()" data-freq='852.0, 1336.0'>8</button></td>
+        <td><button onmousedown="addOscillators(852.0, 1477.0)" onmouseup="stop()" data-freq='852.0, 1477.0'>9</button></td>
+        <td><button onmousedown="addOscillators(852.0, 1633.0)" onmouseup="stop()" data-freq='852.0, 1633.0'>C</button></td>
+      </tr>
+
+      <tr>
+        <td><button onmousedown="addOscillators(941.0, 1209.0)" onmouseup="stop()" data-freq='941.0, 1209.0'>*</button></td>
+        <td><button onmousedown="addOscillators(941.0, 1336.0)" onmouseup="stop()" data-freq='941.0, 1336.0'>0</button></td>
+        <td><button onmousedown="addOscillators(941.0, 1477.0)" onmouseup="stop()" data-freq='941.0, 1477.0'>#</button></td>
+        <td><button onmousedown="addOscillators(941.0, 1633.0)" onmouseup="stop()" data-freq='941.0, 1633.0'>D</button></td>
+      </tr>
+      
+    </table>
+
+  </section>
+  <script src='index.js'></script>
+
+</body>
+
+</html>
