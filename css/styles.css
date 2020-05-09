@@ -1,3 +1,83 @@
+h1, h2, h3 {
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+}
+
+h1 {
+  color: #f6eedf;
+  font-size: 50px;
+}
+
+h2 {
+  color: #f6eedf;
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 12px;
+}
+
+body {
+  background-color: #f57b51;
+}
+
+.with-border {
+  border-style: solid;
+  border-radius: 3%;
+  border-color: #282828;
+  border-width: 3px;
+  background-color: #d63447;
+}
+
+.main-content {
+  margin: 1vw;
+  background: #ffd31d;
+  border-radius: 1%;
+  text-align: center;
+}
+
+.control-box {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 1vw 3vw;
+  text-align: center;
+}
+
+.buttons {
+  margin: 0 auto;
+}
+
+.btn {
+  width: 66px;
+  height: 66px;
+  margin: 0.5vw;
+  border-style: solid;
+  border-radius: 10%;
+  border-color: #282828;
+  border-width: 3px;
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn-pressed img {
+  width: 70%;
+}
+
+.instructions {
+  text-align: center;
+}
+.control-btn {
+  background-color: #f6eedf;
+}
+.control-pressed {
+  background-color: #d63447;
+  color: #f6eedf;
+}
 
 /* home-button */
 .home-button {

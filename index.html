@@ -3,63 +3,83 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Simon</title>
+  <title>MERLIN</title>
   <link rel="icon" href="images/harris-favicon.png">
-  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
 
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Rubik&display=swap" rel="stylesheet">
+
+  <!-- Local CSS -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
   <!-- Home button -->
-  <!-- <div class="home-button fixed-top">
+  <div class="home-button fixed-top">
     <a href="https://harriskhawar.com">
       <img class="home-icon img-fluid" src="images/home-favicon.png" alt="home-favicon">
       <img class="img-fluid" src="images/harris-favicon.png" alt="harris-favicon">
     </a>
-  </div> -->
+  </div>
+  
+  <section class="main-content">
 
-  <section id="merlin">
+    <div class="control-box with-border">
+      <h1>MERLIN</h1>
+    </div>
 
-    <table class="button-pad">
-      <!-- <tr>
-        <td></td>
-        <td>1209Hz</td>
-        <td>1336Hz</td>
-        <td>1477Hz</td>
-        <td>1633Hz</td>
-      </tr> -->
-      <tr>
-        <td><button onmousedown="addOscillators(697.0, 1209.0)" onmouseup="stop()" data-freq='697.0, 1209.0'>1</button></td>
-        <td><button onmousedown="addOscillators(697.0, 1336.0)" onmouseup="stop()" data-freq='697.0, 1336.0'>2</button></td>
-        <td><button onmousedown="addOscillators(697.0, 1477.0)" onmouseup="stop()" data-freq='697.0, 1477.0'>3</button></td>
-        <td><button onmousedown="addOscillators(697.0, 1633.0)" onmouseup="stop()" data-freq='697.0, 1633.0'>A</button></td>
-      </tr>
+    <div class="button-pad">
+      <table class="buttons with-border">
+        <tr>
+          <td></td>
+          <td><button class="btn" onpointerdown="addOscillators(941.0, 1477.0)" onpointerup="stop()" data-freq='941.0, 1477.0'><img src="images/btn-bg.png" alt="button"></button></td>
+          <td></td>
+        </tr>
 
-      <tr>
-        <td><button onmousedown="addOscillators(770.0, 1209.0)" onmouseup="stop()" data-freq='770.0, 1209.0'>4</button></td>
-        <td><button onmousedown="addOscillators(770.0, 1336.0)" onmouseup="stop()" data-freq='770.0, 1336.0'>5</button></td>
-        <td><button onmousedown="addOscillators(770.0, 1477.0)" onmouseup="stop()" data-freq='770.0, 1477.0'>6</button></td>
-        <td><button onmousedown="addOscillators(770.0, 1633.0)" onmouseup="stop()" data-freq='770.0, 1633.0'>B</button></td>
-      </tr>
+        <tr>
+          <td><button class="btn" onpointerdown="addOscillators(697.0, 1209.0)" onpointerup="stop()" data-freq='697.0, 1209.0'><img src="images/btn-bg.png" alt="button"></button></td>
+          <td><button class="btn" onpointerdown="addOscillators(697.0, 1336.0)" onpointerup="stop()" data-freq='697.0, 1336.0'><img src="images/btn-bg.png" alt="button"></button></td>
+          <td><button class="btn" onpointerdown="addOscillators(697.0, 1477.0)" onpointerup="stop()" data-freq='697.0, 1477.0'><img src="images/btn-bg.png" alt="button"></button></td>
+        </tr>
 
-      <tr>
-        <td><button onmousedown="addOscillators(852.0, 1209.0)" onmouseup="stop()" data-freq='852.0, 1209.0'>7</button></td>
-        <td><button onmousedown="addOscillators(852.0, 1336.0)" onmouseup="stop()" data-freq='852.0, 1336.0'>8</button></td>
-        <td><button onmousedown="addOscillators(852.0, 1477.0)" onmouseup="stop()" data-freq='852.0, 1477.0'>9</button></td>
-        <td><button onmousedown="addOscillators(852.0, 1633.0)" onmouseup="stop()" data-freq='852.0, 1633.0'>C</button></td>
-      </tr>
+        <tr>
+          <td><button class="btn" onpointerdown="addOscillators(770.0, 1209.0)" onpointerup="stop()" data-freq='770.0, 1209.0'><img src="images/btn-bg.png" alt="button"></button></td>
+          <td><button class="btn" onpointerdown="addOscillators(770.0, 1336.0)" onpointerup="stop()" data-freq='770.0, 1336.0'><img src="images/btn-bg.png" alt="button"></button></td>
+          <td><button class="btn" onpointerdown="addOscillators(770.0, 1477.0)" onpointerup="stop()" data-freq='770.0, 1477.0'><img src="images/btn-bg.png" alt="button"></button></td>
+        </tr>
 
-      <tr>
-        <td><button onmousedown="addOscillators(941.0, 1209.0)" onmouseup="stop()" data-freq='941.0, 1209.0'>*</button></td>
-        <td><button onmousedown="addOscillators(941.0, 1336.0)" onmouseup="stop()" data-freq='941.0, 1336.0'>0</button></td>
-        <td><button onmousedown="addOscillators(941.0, 1477.0)" onmouseup="stop()" data-freq='941.0, 1477.0'>#</button></td>
-        <td><button onmousedown="addOscillators(941.0, 1633.0)" onmouseup="stop()" data-freq='941.0, 1633.0'>D</button></td>
-      </tr>
-      
-    </table>
+        <tr>
+          <td><button class="btn" onpointerdown="addOscillators(852.0, 1209.0)" onpointerup="stop()" data-freq='852.0, 1209.0'><img src="images/btn-bg.png" alt="button"></button></td>
+          <td><button class="btn" onpointerdown="addOscillators(852.0, 1336.0)" onpointerup="stop()" data-freq='852.0, 1336.0'><img src="images/btn-bg.png" alt="button"></button></td>
+          <td><button class="btn" onpointerdown="addOscillators(852.0, 1477.0)" onpointerup="stop()" data-freq='852.0, 1477.0'><img src="images/btn-bg.png" alt="button"></button></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td><button class="btn" onpointerdown="addOscillators(941.0, 1336.0)" onpointerup="stop()" data-freq='941.0, 1336.0'><img src="images/btn-bg.png" alt="button"></button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="control-box with-border">
+      <button id="record-btn" class="btn control-btn">
+        <h3>RECORD</h3>
+      </button>
+      <button id="play-btn" class="btn control-btn">
+        <h3>PLAY</h3>
+      </button>
+    </div>
 
   </section>
+
+  <section>
+    <div class="instructions">
+      <h2>Press record and click buttons.<br>
+        Press play to stop recording and start playback.</h2>
+    </div>
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src='index.js'></script>
 
 </body>
